@@ -5,6 +5,7 @@ This repository contains the source code for the example provided in theMedium a
 # Powered by
 
 [![LabVIEW][LabVIEW]][LabVIEW-url]
+[![Python][Python]][Python-url]
 [![0MQ][0MQ]][0MQ-url]
 
 [LabVIEW]: https://img.shields.io/badge/labview-000000?style=for-the-badge&logo=labview&logoColor=white
@@ -13,8 +14,17 @@ This repository contains the source code for the example provided in theMedium a
 [0MQ]:https://img.shields.io/badge/Ømq-000000?style=for-the-badge&logo=0mq&logoColor=white
 [0MQ-url]:https://zeromq.org/
 
+[Python]:https://img.shields.io/badge/python-000000?style=for-the-badge&logo=python&logoColor=white
+[Python-url]:https://www.python.org/
+
 ## Dependencies
+
+### LabVIEW
 
 * LabVIEW 2020 or later
 * [ZeroMQ Socket Library by Martijn Jasperse](https://www.vipm.io/package/labview-zmq/)
 
+### Python
+
+* Python 3.7+
+* ```pip install pyzmq```
