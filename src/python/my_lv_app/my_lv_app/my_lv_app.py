@@ -8,7 +8,7 @@ context = zmq.Context()
 #  Socket to talk to server
 print("Connecting to LabVIEW server…")
 socket = context.socket(zmq.REQ)
-socket.connect("tcp://localhost:5555")
+socket.connect("tcp://localhost:5556")
 
 def stop():
     json = '{"message":"stop"}'
@@ -37,3 +37,4 @@ def say(text):
     else:
         print("Error sending the message to the LabVIEW application...")
     
+say("ciao")

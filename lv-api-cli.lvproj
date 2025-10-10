@@ -10,6 +10,31 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="example" Type="Folder">
+			<Item Name="Example 1 - QMH" Type="Folder">
+				<Property Name="NI.SortType" Type="Int">3</Property>
+				<Item Name="type defs" Type="Folder">
+					<Item Name="general" Type="Folder">
+						<Item Name="main_ref.ctl" Type="VI" URL="../examples/main_ref.ctl"/>
+					</Item>
+					<Item Name="QMH" Type="Folder">
+						<Item Name="message.ctl" Type="VI" URL="../examples/message.ctl"/>
+						<Item Name="states.ctl" Type="VI" URL="../examples/states.ctl"/>
+					</Item>
+				</Item>
+				<Item Name="subVI" Type="Folder">
+					<Item Name="API" Type="Folder">
+						<Item Name="external_api_init.vi" Type="VI" URL="../examples/external_api_init.vi"/>
+					</Item>
+					<Item Name="EHL" Type="Folder"/>
+					<Item Name="QMH" Type="Folder">
+						<Item Name="enqueue.vi" Type="VI" URL="../examples/enqueue.vi"/>
+						<Item Name="obtain_queue.vi" Type="VI" URL="../examples/obtain_queue.vi"/>
+					</Item>
+				</Item>
+				<Item Name="qmh_example.vi" Type="VI" URL="../examples/qmh_example.vi"/>
+			</Item>
+		</Item>
 		<Item Name="subVIs" Type="Folder">
 			<Item Name="API" Type="Folder">
 				<Item Name="API handler.vi" Type="VI" URL="../src/labview/API handler.vi"/>
@@ -24,6 +49,8 @@
 			</Item>
 			<Item Name="user events.ctl" Type="VI" URL="../src/labview/user events.ctl"/>
 		</Item>
+		<Item Name="ehl_init.vi" Type="VI" URL="../examples/ehl_init.vi"/>
+		<Item Name="external_api_close.vi" Type="VI" URL="../examples/external_api_close.vi"/>
 		<Item Name="main.vi" Type="VI" URL="../src/labview/main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
